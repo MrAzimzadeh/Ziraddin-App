@@ -11,7 +11,7 @@
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="115dp"
         android:background="@drawable/ziraddin__login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -19,35 +19,56 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/astrology___fortunes__login"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        android:layout_width="343dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_button_bg"
+        android:paddingBottom="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTermsOfUse"
+        android:layout_width="187dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:text="I read the terms of use"
+        android:textColor="#252525"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextDate"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:layout_marginTop="192dp"
-        android:background="@drawable/bg"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text"
+        android:clickable="true"
+        android:cursorVisible="false"
         android:ems="10"
-        android:hint="Name"
-        android:inputType="text"
+        android:focusable="false"
+        android:hint="@string/date_of_birthday"
+        android:inputType="date"
+        android:paddingStart="16dp"
         android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSurname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/editTextSurname"
         android:layout_width="343dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
@@ -56,29 +77,36 @@
         android:hint="Surname"
         android:inputType="text"
         android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toEndOf="@+id/editTextName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/editTextName"
         android:layout_width="343dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/text"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/bg"
         android:ems="10"
-        android:hint="Date of Birthday"
-        android:inputType="date"
+        android:hint="Name"
+        android:inputType="text"
         android:paddingLeft="16dp"
-        android:paddingTop="16dp"
-        android:paddingBottom="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextText2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2"
+        android:textColor="#3C3C3C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/astrology___fortunes__login"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         tools:ignore="MissingConstraints" />
 
     <Spinner
@@ -91,32 +119,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate"
-        tools:ignore="MissingConstraints" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        android:layout_width="343dp"
-        android:layout_height="83dp"
-        android:layout_marginTop="76dp"
-        android:background="@drawable/login_button_bg"
-        android:paddingBottom="20dp"
-        android:text="Login"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/spinner"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/spinner"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        tools:ignore="MissingConstraints" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="187dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="28dp"
-        android:text="I read the terms of use"
-        app:layout_constraintEnd_toEndOf="@+id/spinner"
-        app:layout_constraintStart_toStartOf="@+id/spinner"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ZiraddinApp</string>
+    <string name="date_of_birthday">Date of Birthday</string>
+    <string name="home">Home</string>
+    <string name="palmistry">Palmistry</string>
+    <string name="horoscope">Horoscope</string>
+    <string name="inbox">Inbox</string>
 </resources>

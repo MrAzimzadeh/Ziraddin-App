@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item1"
+        android:enabled="true"
+        android:icon="@drawable/home_bottom_nav_icon"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/item2"
+        android:enabled="true"
+        android:icon="@drawable/palmistry_ic_bottom_nav_icon"
+        android:title="@string/palmistry" />
+    <item
+        android:id="@+id/item3"
+        android:enabled="true"
+        android:icon="@drawable/horoscope_bottom_nav_icon"
+        android:title="@string/horoscope" />
+    <item
+        android:id="@+id/item4"
+        android:enabled="true"
+        android:icon="@drawable/mail_bottom_nav_icon"
+        android:title="@string/inbox" />
+</menu>

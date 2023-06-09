@@ -2,5 +2,6 @@
 <resources>
     <dimen name="d_36">36dp</dimen>
     <dimen name="d_16">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

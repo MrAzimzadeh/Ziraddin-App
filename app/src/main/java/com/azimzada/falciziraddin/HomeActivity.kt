@@ -2,6 +2,7 @@ package com.azimzada.falciziraddin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.azimzada.falciziraddin.core.bottom_navigation_fragments.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -36,6 +37,7 @@ class HomeActivity : AppCompatActivity() {
                 else -> {true}
             }
         }
+
     }
     private  fun loadFragment(fragment: Fragment){
         val transaction = supportFragmentManager.beginTransaction()
